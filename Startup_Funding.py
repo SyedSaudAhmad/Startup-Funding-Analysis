@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Startup Funding Analysis", layout="wide")
 
-df = pd.read_csv("F:\CODING\Data Analyst Udemy\Pandas Case Study - Project\Startup_Cleaned.csv")
+df = pd.read_csv("Startup_Cleaned.csv")
 df['Date'] = pd.to_datetime(df['Date'],errors='coerce')
 df['Month'] = df['Date'].dt.month
 df['Year'] = df['Date'].dt.year
